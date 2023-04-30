@@ -6,7 +6,7 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
-int N = 5; // N-мерное пространство
+int N = 3; // N-мерное пространство
 int[] point_A = new int[N]; // Массив для координат точки А
 int[] point_B = new int[N]; // Массив для координат точки B
 
@@ -43,7 +43,7 @@ for (int i = 0; i < N; i++)
 
 double rad = Math.Round(FindRadius(point_A, point_B), 2);
 Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine("Расстояние между точками A и B - " + rad);
+Console.WriteLine($"Расстояние между точками A и B в {N}D пространстве = " + rad);
 Console.ResetColor();
 
 
